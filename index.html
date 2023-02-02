@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cálculo IMC</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header>
+    <h1>Calcule o seu IMC</h1>
+  </header>
+
+  <section>
+    <div>
+      <p>
+        Informe a sua altura: 
+        <input type="number" name="num-altura" id="altura" style="width: 60px;">metros (ex: 1.75)
+      </p>
+      <p>
+        Informe o seu peso:
+        <input type="number" name="num-peso" id="peso" style="width: 60px;">kg (ex: 85.3)
+      </p>
+      <p>
+        Informe o seu sexo: 
+        <label for="sex-mas">Masculino</label>
+        <input type="radio" name="rad-sex" id="sex-mas" checked>
+        <label for="sex-fem">Feminino</label>
+        <input type="radio" name="rad-sex" id="sex-fem">
+      </p>
+      <input type="button" value="calcular" id="botao-calcular" onclick="calcular()">
+    </div>
+
+    <div id="resultado">
+      <p>IMC calculado:</p>
+      <p>Resultado:</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; Rodrigo Serrasqueiro</p>
+  </footer>
+
+ 
+  <script src="./scripts.js"></script>
+</body>
+</html>
